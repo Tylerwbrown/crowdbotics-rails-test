@@ -1,0 +1,2 @@
+$("#phrases-list").append("<%= escape_javascript(render partial: 'phrase', locals: { phrase: @phrase } ) %>");
+$("#phrases-count").html("<%= escape_javascript(render partial: 'phrase_count') %>");

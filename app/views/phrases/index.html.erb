@@ -1,0 +1,17 @@
+<center class="main-block">
+  <%= link_to 'Retrieve Phrase', show_random_phrase_path, remote: true, class: 'large-button success-button' %>
+  <%= link_to 'Clear Phrases', clear_phrases_path, remote: true, class: 'large-button danger-button' %>
+  </br>
+    
+  <div id="phrases-count" class="large-button info-button">
+    <%= render partial: 'phrase_count'%>
+  </div>
+
+  <div id="phrases-list">
+    <!-- Use this as an AJAX loading location -->
+    <% session[:current_ids].each do |id| %>
+      <!-- Don't use DB calls here -->
+      <%= render partial: 'phrase', locals: { phrase: Phrase.find_by_id(id).value } %>
+    <% end %>
+  </div>
+</center>

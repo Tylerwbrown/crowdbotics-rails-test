@@ -1,0 +1,43 @@
+// Place all the styles related to the PhrasesController controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//TODO: Verify this is following BEM naming conventions
+.large-button {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 14px 28px;
+}
+
+.success-button {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.danger-button {
+  background-color: #d9534f;
+  color: #fff
+}
+
+.info-button {
+  background-color: #5bc0de;
+  color: #fff
+}
+.main-block {
+  margin-top: 20px;
+}
+
+#phrases-list {
+  margin-top: 20px;
+}
+
+#phrases-count {
+  margin-top: 20px;
+  width: 300px;
+}
+
+.phrase {
+  border-radius: 10px;
+  border: 2px solid #337ab7;
+  width: 100px;
+}
